@@ -1,0 +1,117 @@
+/* General Section Styles */
+#laundry-order {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+#laundry-order:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+#laundry-order h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Laundry Form Styles */
+#laundry-order form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#laundry-order label {
+    font-weight: 500;
+    color: #333;
+    transform: translateY(0);
+    transition: all 0.3s ease;
+}
+
+#laundry-order textarea, 
+#laundry-order input[type="text"] {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+#laundry-order textarea:focus, 
+#laundry-order input[type="text"]:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76,175,80,0.2);
+    outline: none;
+}
+
+#laundry-order textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Pickup Address */
+#laundry-order input[type="text"] {
+    margin-bottom: 10px;
+}
+
+/* Submit Button */
+#laundry-order button {
+    background: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#laundry-order button:hover {
+    background: #45a049;
+    transform: scale(1.02);
+}
+
+/* Success/Failure Message */
+#laundry-order .message {
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+#laundry-order .message.success {
+    background: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+}
+
+#laundry-order .message.error {
+    background: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.submitted {
+    transform: scale(0.95);
+    opacity: 0.5;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+}
+
+.error-shake {
+    animation: shake 0.5s ease-in-out;
+}

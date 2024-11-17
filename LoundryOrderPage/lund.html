@@ -1,0 +1,25 @@
+<header>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lund.css">
+    <title>Loundry-Service</title>
+</header>
+<section id="laundry-order">
+    <h2>Order Laundry</h2>
+    <form action="/laundry-order" method="POST">
+        <label for="items">Items to be cleaned</label>
+        <textarea id="items" name="items" placeholder="Describe your laundry items (e.g., shirts, pants, etc.)" required></textarea>
+        
+        <label for="pickup-location">Pickup Location</label>
+        <input type="text" id="pickup-location" name="pickup-location" placeholder="Your address or pickup location" required>
+        
+        <button type="submit">Place Order</button>
+    </form>
+
+    <!-- Success or Error Message (optional for dynamic handling) -->
+    <div class="message success" style="display:none;">
+        Your laundry order has been placed successfully!
+    </div>
+    <div class="message error" style="display:none;">
+        There was an error processing your order. Please try again.
+    </div>
+</section>
