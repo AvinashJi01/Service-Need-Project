@@ -1,72 +1,145 @@
-<header>
-    <link rel="stylesheet" href="headnew.css">
-    <div class="logo">
-        <img src="download.jpg" alt="LOGO">
-    </div>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/register">Register</a></li>
-            <li><a href="/login">Login</a></li>
-            <li><a href="/search-rooms">Search Rooms</a></li>
-            <li><a href="/vehicles">Buy Vehicle</a></li>
-            <li><a href="/laundry">Order Laundry</a></li>
-        </ul>
-    </nav>
-</header>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Service Need - Your One Stop Solution</title>
+    <link rel="stylesheet" href="headnew.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <!-- Add an image section -->
-    <div class="partial-background">
-        <img src="ocean-view.jpg" alt="Ocean View">
-    </div>
+    <header>
+        <div class="logo">
+            <img src="image.png" alt="LOGO">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="headnew.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="rent.html">Search Rooms</a></li>
+                <li><a href="vechile.html">Buy Vehicle</a></li>
+                <li><a href="lund.html">Order Laundry</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section id="register">
-        <h2>Register</h2>
-        <form action="/register" method="POST">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
-            
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
-            
-            <button type="submit">Register</button>
-        </form>
-    </section>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Service Need</h1>
+                <p>Your one-stop solution for rooms, vehicles, and laundry services</p>
+                <div class="cta-buttons">
+                    <a href="register.html" class="btn primary">Get Started</a>
+                    <a href="#services" class="btn secondary">Learn More</a>
+                </div>
+            </div>
+        </section>
 
-    <section id="login">
-        <h2>Login</h2>
-        <form action="/login" method="POST">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
-            
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
-            
-            <button type="submit">Login</button>
-        </form>
-    </section>
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <img src="room.jpg" alt="Room Search">
+                    <h3>Find Rooms</h3>
+                    <p>Discover comfortable rooms that match your preferences and budget</p>
+                    <a href="rent.html" class="btn">Search Rooms</a>
+                </div>
+
+                <div class="card">
+                    <img src="car.jpg" alt="Vehicle Purchase">
+                    <h3>Buy Vehicles</h3>
+                    <p>Browse through our collection of quality vehicles for sale</p>
+                    <a href="vechile.html" class="btn">View Vehicles</a>
+                </div>
+
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.rC3rHTXOrmCJVtxbz0ENuQHaEo?rs=1&pid=ImgDetMain" alt="Laundry Service">
+                    <h3>Laundry Service</h3>
+                    <p>Professional laundry service at your convenience</p>
+                    <a href="lund.html" class="btn">Order Now</a>
+                </div>
+            </div>
+        </section>
+          <section class="features">
+              <h2>Why Choose Us</h2>
+              <div class="feature-grid">
+                  <div class="feature-card">
+                      <div class="feature-icon">
+                          <i class="fas fa-shield-alt"></i>
+                      </div>
+                      <h3>Trusted Service</h3>
+                      <p>100% verified listings and background-checked service providers for your peace of mind.</p>
+                      <div class="feature-stats">
+                          <span>1000+</span>
+                          <p>Verified Partners</p>
+                      </div>
+                  </div>
+
+                  <div class="feature-card">
+                      <div class="feature-icon">
+                          <i class="fas fa-clock"></i>
+                      </div>
+                      <h3>24/7 Support</h3>
+                      <p>Round-the-clock customer service with real-time support and instant solutions.</p>
+                      <div class="feature-stats">
+                          <span>99%</span>
+                          <p>Response Rate</p>
+                      </div>
+                  </div>
+
+                  <div class="feature-card">
+                      <div class="feature-icon">
+                          <i class="fas fa-wallet"></i>
+                      </div>
+                      <h3>Best Prices</h3>
+                      <p>Competitive pricing with no hidden charges. Get the best value for your money.</p>
+                      <div class="feature-stats">
+                          <span>50%</span>
+                          <p>Average Savings</p>
+                      </div>
+                  </div>
+
+                  <div class="feature-card">
+                      <div class="feature-icon">
+                          <i class="fas fa-bolt"></i>
+                      </div>
+                      <h3>Quick Service</h3>
+                      <p>Fast and efficient service delivery with real-time tracking and updates.</p>
+                      <div class="feature-stats">
+                          <span>30min</span>
+                          <p>Average Response</p>
+                      </div>
+                  </div>
+              </div>
+          </section>
+      </main>
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2024 Your Company. All rights reserved.</p>
-            <ul>
-                <li><a href="/privacy-policy">Privacy Policy</a></li>
-                <li><a href="/terms-of-service">Terms of Service</a></li>
-                <li><a href="/contact">Contact Us</a></li>
-            </ul>
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Service Need is your trusted platform for finding rooms, purchasing vehicles, and accessing quality laundry services.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="/terms-of-service">Terms of Service</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-icon">Facebook</a>
+                    <a href="#" class="social-icon">Twitter</a>
+                    <a href="#" class="social-icon">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Service Need. All rights reserved.</p>
         </div>
     </footer>
 </body>

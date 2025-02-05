@@ -41,21 +41,23 @@ header {
     z-index: 1000;
     animation: slideDown 0.8s ease-out;
 }
+  .logo {
+      display: flex;
+      align-items: center;
+      animation: float 3s ease-in-out infinite;
+  }
 
-.logo {
-    animation: float 3s ease-in-out infinite;
-}
+  .logo img {
+      width: 180px;
+      height: 60px;
+      object-fit: contain;
+      margin: 10px 20px;
+      transition: transform 0.3s ease;
+  }
 
-.logo img {
-    height: 50px;
-    width: auto;
-    transition: transform 0.3s ease;
-}
-
-.logo img:hover {
-    transform: scale(1.1) rotate(5deg);
-}
-
+  .logo img:hover {
+      transform: scale(1.1) rotate(5deg);
+  }
 /* Navigation Enhancement */
 nav ul {
     display: flex;
